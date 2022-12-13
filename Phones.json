@@ -1,0 +1,24 @@
+{
+  "response": {
+    "item": [
+      {
+        "id": 1,
+        "f_name": "Ivan",
+        "l_name": "Ivanov",
+        "phone": "+998901000101"
+      },
+      {
+        "id": 2,
+        "f_name": "Aleksandr",
+        "l_name": "Sidorov",
+        "phone": "+998901000102"
+      },
+      {
+        "id": 3,
+        "f_name": "Vladimir",
+        "l_name": "Vladimirov",
+        "phone": "+998901000103"
+      }
+    ]
+  }
+}
