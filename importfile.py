@@ -7,24 +7,10 @@ def openjsonfile(fname):
     res = file['response']['item']
     return res
 
-# def opencsvfile(fname):
-#     f = open(fname, 'r')
-#     res = []
-#     reader = csv.reader(f, delimiter=',')
-#     for item in reader:
-#         res.append({'id': item[0], 'f_name': item[1], 'l_name': item[2], 'phone': item[3]})
-#     return res
-
-def savecsvfile(fname):
-    f = open(fname, 'w')
+def opencsvfile(fname):
+    f = open(fname, 'r')
     res = []
-    reader = csv.reader(f, delimiter=',')
-    for item in reader:
-        res.append({'id': item[0], 'f_name': item[1], 'l_name': item[2], 'phone': item[3]})
+    freader = csv.reader(f, delimiter = ',')
+    for row in freader:
+        res.append({'id': row[0], 'f_name': row[1], 'l_name': row[2], 'phone': row[3]})
     return res
-
-f = openjsonfile('Phones.json')
-for i in f:
-    for j in i:
-        print(str(i[j]), end= ' ')
-    print()
