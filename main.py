@@ -40,7 +40,6 @@ def printres(res):
     print(Fore.GREEN + f'==============================================================\n'
           + Fore.CYAN + f'    {res}\n'
           + Fore.GREEN + f'==============================================================' + Fore.RESET)
-
 def choice(x):
     if x == 1:
         enter_key_to_continue()
@@ -52,7 +51,7 @@ def choice(x):
         enter_key_to_continue()
     elif x == 5:
         os.system('cls')
-        print("\033[0m{}".format('Выход из программы...'))
+        print(Fore.RED + 'Выход из программы...' + Fore.RESET)
         import sys
         sys.exit()
     elif x == 6:
@@ -70,6 +69,5 @@ def main():
     except:
         Task = 0
     choice(Task)
-
 
 main()
