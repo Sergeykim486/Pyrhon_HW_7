@@ -4,7 +4,7 @@ def openjsonfile(fname):
     f = open(fname, 'r')
     file = json.loads(f.read())
     f.close()
-    res = file['response']['item']
+    res = file
     return res
 
 def opencsvfile(fname):
